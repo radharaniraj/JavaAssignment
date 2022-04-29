@@ -1,19 +1,20 @@
 import processing.core.PApplet;
+
 public class TryProcessing extends PApplet {
     public static final int WIDTH = 640;
-    public static final int HEIGHT=480;
-    public static final int DIAMETER =10;
-    int x,c,d,e= 0;
-    int y=50;
-    int z=100;
-    int a= 150;
+    public static final int HEIGHT = 480;
+    public static final int DIAMETER = 10;
+    int x, c, d, e = 0;
+    int y = 50;
+    int z = 100;
+    int a = 150;
     int b = 200;
 
 
     @Override
     public void settings() {
         super.settings();
-        size(WIDTH,HEIGHT);
+        size(WIDTH, HEIGHT);
     }
 
     @Override
@@ -21,42 +22,38 @@ public class TryProcessing extends PApplet {
         super.setup();
     }
 
-
-
     @Override
     public void draw() {
         drawFirstCircle();
         drawSecondCircle();
         drawThirdCircle();
         drawFourthCircle();
-
     }
-    private void drawFirstCircle()  {
 
-            ellipse(x, y, DIAMETER, DIAMETER);
-
-            x++;
-
+    private void drawFirstCircle() {
+        ellipse(x, y, DIAMETER, DIAMETER);
+        x++;
     }
-    private void drawSecondCircle(){
+
+    private void drawSecondCircle() {
         //delay(20);
-        ellipse(c, 100, DIAMETER, DIAMETER);
+        ellipse(c, z, DIAMETER, DIAMETER);
         c++;
     }
-    private void drawThirdCircle(){
+
+    private void drawThirdCircle() {
         //delay(30);
-        ellipse(d, 150, DIAMETER, DIAMETER);
+        ellipse(d, a, DIAMETER, DIAMETER);
         d++;
     }
-    private void drawFourthCircle(){
+
+    private void drawFourthCircle() {
         //delay(40);
-        ellipse(e, 200, DIAMETER, DIAMETER);
+        ellipse(e, b, DIAMETER, DIAMETER);
         e++;
     }
 
     public static void main(String[] args) {
-        PApplet.main("TryProcessing",args);
-
-
+        PApplet.main("TryProcessing", args);
     }
 }

@@ -4,7 +4,7 @@ public class Ball extends PApplet {
 
     private final int HEIGHT;
     private int positionX;
-    final int speed;
+    private int speed;
     private final int DIAMETER;
 
     public Ball(int speed, int height) {
